@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "commit": "git-cz",
     "dev": "vite --port 3000",
     "format": "prettier --write .",
     "lint": "eslint --cache .",
+    "prepare": "husky install",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +17,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^4.0.1",
@@ -29,8 +33,15 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-testing-library": "^5.11.0",
     "eslint-plugin-xss": "^0.1.12",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "prettier-plugin-packagejson": "^2.4.5",
     "vite": "^4.4.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
