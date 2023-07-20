@@ -22,9 +22,13 @@
     "*.{js,json,jsx,css,html,md,svg}": "prettier --write"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "clsx": "^2.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-use": "^17.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
