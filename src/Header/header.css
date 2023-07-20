@@ -1,0 +1,31 @@
+header {
+  height: 72px;
+  background-color: #0d293f;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  flex-grow: 1;
+}
+
+.logo {
+  font-size: 1rem;
+  color: white;
+  padding: 0 2rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navListItem {
+  padding-right: 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+}
