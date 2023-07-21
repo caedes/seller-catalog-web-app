@@ -8,6 +8,15 @@ const NavLink = styled.a`
   color: ${({ light }) => (light ? "#0d293f" : "white")};
 `;
 
+const mainMenu = [
+  { name: "Produits", url: "/products" },
+  { name: "Commandes", url: "/orders" },
+  { name: "Finance", url: "/financial" },
+  { name: "Rapports", url: "/reports" },
+  { name: "Messages", url: "/messages" },
+  { name: "Marketplaces", url: "/marketplaces" },
+];
+
 export default function Header() {
   const [currentMode, { toggleMode }] = useDarkLightMode();
 
@@ -16,16 +25,13 @@ export default function Header() {
       <h1 className={clsx("logo", { light: !currentMode })}>Seller Catalog</h1>
       <nav>
         <ol className="navList">
-          <li className="navListItem">
-            <NavLink href="/page1" light={!currentMode}>
-              Page 1
-            </NavLink>
-          </li>
-          <li>
-            <NavLink href="/page2" light={!currentMode}>
-              Page 2
-            </NavLink>
-          </li>
+          {mainMenu.map(({ name, url }) => (
+            <li key={url} className="navListItem">
+              <NavLink href={url} light={!currentMode}>
+                {name}
+              </NavLink>
+            </li>
+          ))}
         </ol>
       </nav>
       <button onClick={toggleMode}>
