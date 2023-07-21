@@ -1,0 +1,159 @@
+{
+  "saleChannels": [
+    { "id": "ebf4927b-3e04-4dce-9278-43505134c931", "name": "Danone" },
+    { "id": "510a42c4-7ec1-4ddd-bc9b-fbe51789295d", "name": "Nestlé" },
+    { "id": "52655c59-d1c3-4889-846c-a3fc44ff7d5a", "name": "Unilever" }
+  ],
+  "products": [
+    {
+      "description": "Ce magnifique radio-phono comprend un excellent récepteur radioL'ensemble, dans une belle ébénisterie teintée palissandre, forme un très phonique 6 lampes et un tourne-disque de vitesses placé sous le couvercle. Beau meuble. Ce modèle, dont le montage particulièrement soigne assure un très bon rendement aussi bien en radio qu'en phono, est garanti mn an.",
+      "id": "8f9529db-6d6c-4ddd-a4f5-32a9a99b4552",
+      "name": "Rustique Plastique Souris",
+      "imageUrl": "https://picsum.photos/seed/GedeGtmQp/640/640",
+      "price": 59.9,
+      "condition": "used",
+      "stock": 12,
+      "salesChannelId": "ebf4927b-3e04-4dce-9278-43505134c931"
+    },
+    {
+      "description": "Bicyclette à 1 vitesse, pneus 1/2 ballon. Cadre de 52cm. Jantes chromées. Roue Hore.  Moyeux indéréglables. 2 freins sur jantes. Guidon trials. Garde-boue et couvre chaine en acier émaillé. Porte-bagages. Gardejupes. Pédales à blocs caoutchouc. Émail couleur. Selle route cuir. Sacoche avec outillage. Pompe de cadre. Timbre avertisseur.",
+      "id": "85f2060a-f112-4424-a7c7-7feb57769e7f",
+      "name": "Luxueux Doux Chaise",
+      "imageUrl": "https://picsum.photos/seed/WDUh7FblHa/640/640",
+      "price": 57.83,
+      "condition": "new",
+      "stock": 6,
+      "salesChannelId": "ebf4927b-3e04-4dce-9278-43505134c931"
+    },
+    {
+      "description": "Ce magnifique radio-phono comprend un excellent récepteur radioL'ensemble, dans une belle ébénisterie teintée palissandre, forme un très phonique 6 lampes et un tourne-disque de vitesses placé sous le couvercle. Beau meuble. Ce modèle, dont le montage particulièrement soigne assure un très bon rendement aussi bien en radio qu'en phono, est garanti mn an.",
+      "id": "8657691e-fad8-4c6e-9f88-e7631cdd1e3c",
+      "name": "Pratique Acier Ordinateur",
+      "imageUrl": "https://picsum.photos/seed/rnYi9vE/640/640",
+      "price": 96.11,
+      "condition": "used",
+      "stock": 14,
+      "salesChannelId": "ebf4927b-3e04-4dce-9278-43505134c931"
+    },
+    {
+      "description": "Carrosserie en tôle d'acier laqué blanc montée sur roues pour faciliter le déplacement, couvercle laqué blanc, dessus et cuve en métal émaille marron, inaltérable a l'eau de lessive et a la chaleur,",
+      "id": "ba4588ea-974d-420e-97b9-87fc7318ca3b",
+      "name": "Oriental Métal Boule",
+      "imageUrl": "https://picsum.photos/seed/usoyGs1O/640/640",
+      "price": 30.52,
+      "condition": "used",
+      "stock": 3,
+      "salesChannelId": "ebf4927b-3e04-4dce-9278-43505134c931"
+    },
+    {
+      "description": "Cadre raccord brasé de 53 ou 58 %. Jantes en acier émaillées. Pneus “Hiron” 700 x 35, garantis 12 mois. Pignon roue libre à emboitement hexagonal. Frein “Hirondelle” sur jante arrière. Garde-boue métal.",
+      "id": "49dc2f8d-4f03-4a93-b666-6308f950bd58",
+      "name": "Pratique Coton Pantalon",
+      "imageUrl": "https://picsum.photos/seed/2QsyFyHEmU/640/640",
+      "price": 90.16,
+      "condition": "new",
+      "stock": 18,
+      "salesChannelId": "ebf4927b-3e04-4dce-9278-43505134c931"
+    },
+    {
+      "description": "Récepteurs de télévision à haute définition 819 lignes, donnant une image très nette et d'un contraste agréable ne fatiguant pas la vue, le montage de la partie radio donne un son absolument remarquable.",
+      "id": "ff4c499b-0c58-4168-bff7-7e9c82eba1fd",
+      "name": "Petit Plastique Ordinateur",
+      "imageUrl": "https://picsum.photos/seed/j5CZSN/640/640",
+      "price": 56.54,
+      "condition": "new",
+      "stock": 13,
+      "salesChannelId": "510a42c4-7ec1-4ddd-bc9b-fbe51789295d"
+    },
+    {
+      "description": "Récepteurs de télévision à haute définition 819 lignes, donnant une image très nette et d'un contraste agréable ne fatiguant pas la vue, le montage de la partie radio donne un son absolument remarquable.",
+      "id": "6eba6275-9a10-4d60-b857-810e80757faa",
+      "name": "Rustique Frais Vélo",
+      "imageUrl": "https://picsum.photos/seed/X0oZcmw/640/640",
+      "price": 20.79,
+      "condition": "used",
+      "stock": 0,
+      "salesChannelId": "510a42c4-7ec1-4ddd-bc9b-fbe51789295d"
+    },
+    {
+      "description": "Petite griffe à sarcler. 5 dents en acier, largeur 8 cm. poignée estampée, longueur 26 cm. poids 150 gr. Pour ameublir le sol, arracher les herbes entre les plantes ou fleurs cultivées en lignes rapprochées.",
+      "id": "47e97e65-4626-4c19-95c3-599271bcbbe6",
+      "name": "Licencié Coton Vélo",
+      "imageUrl": "https://picsum.photos/seed/vEEki4WK/640/640",
+      "price": 79.47,
+      "condition": "used",
+      "stock": 6,
+      "salesChannelId": "510a42c4-7ec1-4ddd-bc9b-fbe51789295d"
+    },
+    {
+      "description": "Lunettes étanches, monture caoutchouc moulé de 1re qual. glaces rondes de 55 mm de diam. en verre clair. Les lunettes protègent les yeux contre les poussières, fumées et gaz industriels et se portent av. nos masques 5862-5864. Pds 60 gr.",
+      "id": "43b8b6de-ef81-4435-aaa7-a157aded3a85",
+      "name": "Oriental Congelé Table",
+      "imageUrl": "https://picsum.photos/seed/Qacy8/640/640",
+      "price": 82.4,
+      "condition": "new",
+      "stock": 16,
+      "salesChannelId": "510a42c4-7ec1-4ddd-bc9b-fbe51789295d"
+    },
+    {
+      "description": "Ces médailles et épingles sont en argent avec patine artistique. Elles ont été composées et frappées spécialement dans les ateliers de l'État pour la Société l'Hirondelle.",
+      "id": "372113d5-dc36-4bf2-8a16-7208f1aae9d8",
+      "name": "Luxueux Bois Pantalon",
+      "imageUrl": "https://picsum.photos/seed/9cPdEE2i/640/640",
+      "price": 92.81,
+      "condition": "used",
+      "stock": 7,
+      "salesChannelId": "510a42c4-7ec1-4ddd-bc9b-fbe51789295d"
+    },
+    {
+      "description": "Montre-bracelet, dite “d'Aviateur”, métal inaltérable, diam. 435ym. Mouvement de précision chronographe, cadran avec grande aiguille trotteuse, permettant la lecture 1/25de seconde.",
+      "id": "a677dbaa-2374-4ce9-9eac-5e92eca167d4",
+      "name": "Magnifique Frais Souris",
+      "imageUrl": "https://picsum.photos/seed/3SCdnEul/640/640",
+      "price": 71.92,
+      "condition": "used",
+      "stock": 10,
+      "salesChannelId": "52655c59-d1c3-4889-846c-a3fc44ff7d5a"
+    },
+    {
+      "description": "Maillot en coton fin à rayures se boutonnant devant pour enfants.",
+      "id": "6790aa94-a346-46a9-804b-3536c2346fb1",
+      "name": "Générique Acier Chaussures",
+      "imageUrl": "https://picsum.photos/seed/T9HGr/640/640",
+      "price": 83.14,
+      "condition": "new",
+      "stock": 8,
+      "salesChannelId": "52655c59-d1c3-4889-846c-a3fc44ff7d5a"
+    },
+    {
+      "description": "Maillot en coton fin à rayures se boutonnant devant pour enfants.",
+      "id": "8eee7ff8-6def-4b7b-81a4-3921f29ae151",
+      "name": "Élégant Bois Table",
+      "imageUrl": "https://picsum.photos/seed/SSMAR/640/640",
+      "price": 61.62,
+      "condition": "used",
+      "stock": 20,
+      "salesChannelId": "52655c59-d1c3-4889-846c-a3fc44ff7d5a"
+    },
+    {
+      "description": "Carrosserie en tôle d'acier laqué blanc montée sur roues pour faciliter le déplacement, couvercle laqué blanc, dessus et cuve en métal émaille marron, inaltérable a l'eau de lessive et a la chaleur,",
+      "id": "50e1fa92-f851-47e5-9266-a710cfb9da1c",
+      "name": "Incroyable Doux Saucisses",
+      "imageUrl": "https://picsum.photos/seed/MAycOU/640/640",
+      "price": 97.72,
+      "condition": "used",
+      "stock": 15,
+      "salesChannelId": "52655c59-d1c3-4889-846c-a3fc44ff7d5a"
+    },
+    {
+      "description": "Carrosserie en tôle d'acier laqué blanc montée sur roues pour faciliter le déplacement, couvercle laqué blanc, dessus et cuve en métal émaille marron, inaltérable a l'eau de lessive et a la chaleur,",
+      "id": "e496b9fc-0838-4c0a-9baa-869889ca122b",
+      "name": "Incroyable Granit Thon",
+      "imageUrl": "https://picsum.photos/seed/jwtHFkP8/640/640",
+      "price": 72.84,
+      "condition": "new",
+      "stock": 18,
+      "salesChannelId": "52655c59-d1c3-4889-846c-a3fc44ff7d5a"
+    }
+  ]
+}
