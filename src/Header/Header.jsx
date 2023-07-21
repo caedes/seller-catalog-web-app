@@ -2,14 +2,15 @@ import clsx from "clsx";
 import "./header.css";
 import { useDarkLightMode } from "@/hooks";
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   text-decoration: none;
   color: ${({ light }) => (light ? "#0d293f" : "white")};
 `;
 
 const mainMenu = [
-  { name: "Produits", url: "/products" },
+  { name: "Produits", url: "/" },
   { name: "Commandes", url: "/orders" },
   { name: "Finance", url: "/financial" },
   { name: "Rapports", url: "/reports" },
@@ -18,25 +19,23 @@ const mainMenu = [
 ];
 
 export default function Header() {
-  const [currentMode, { toggleMode }] = useDarkLightMode();
+  const [darkMode, { toggleMode }] = useDarkLightMode();
 
   return (
-    <header className={clsx({ light: !currentMode })}>
-      <h1 className={clsx("logo", { light: !currentMode })}>Seller Catalog</h1>
+    <header className={clsx({ light: !darkMode })}>
+      <h1 className={clsx("logo", { light: !darkMode })}>Seller Catalog</h1>
       <nav>
         <ol className="navList">
           {mainMenu.map(({ name, url }) => (
             <li key={url} className="navListItem">
-              <NavLink href={url} light={!currentMode}>
+              <NavLink to={url} light={!darkMode}>
                 {name}
               </NavLink>
             </li>
           ))}
         </ol>
       </nav>
-      <button onClick={toggleMode}>
-        Mode {currentMode ? "Dark" : "Light"}
-      </button>
+      <button onClick={toggleMode}>Mode {darkMode ? "Dark" : "Light"}</button>
     </header>
   );
 }
