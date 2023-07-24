@@ -5,7 +5,13 @@
 Install the dependencies:
 
 ```shell
-yarn install
+yarn
+```
+
+Create an `.env` file:
+
+```properties
+VITE_API_URL=http://localhost:3001
 ```
 
 Run the dev server:
