@@ -1,11 +1,9 @@
-import { shape, oneOf } from "prop-types";
+import { oneOf } from "prop-types";
 
-export default function ProductCondition({ row }) {
-  return row.condition === "new" ? "Neuf" : "Occasion";
+export default function ProductCondition({ condition }) {
+  return condition === "new" ? "Neuf" : "Occasion";
 }
 
 ProductCondition.propTypes = {
-  row: shape({
-    condition: oneOf(["new", "used"]),
-  }),
+  condition: oneOf(["new", "used"]),
 };

@@ -1,12 +1,10 @@
-import { shape, string } from "prop-types";
+import { string } from "prop-types";
 
-export default function ProductImage({ row }) {
-  return <img src={row.imageUrl} alt={row.name} />;
+export default function ProductImage({ imageUrl, name }) {
+  return <img src={imageUrl} alt={name} />;
 }
 
 ProductImage.propTypes = {
-  row: shape({
-    imageUrl: string,
-    name: string,
-  }),
+  imageUrl: string,
+  name: string,
 };

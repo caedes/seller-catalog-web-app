@@ -4,12 +4,13 @@ import db from "../../db.json";
 import ProductImage from "../ProductImage";
 import ProductPrice from "../ProductPrice";
 import ProductCondition from "../ProductCondition";
+import { withRow } from "../../hoc";
 
 const columns = [
   {
     field: "image",
     headerName: "Image",
-    renderCell: ProductImage,
+    renderCell: withRow(ProductImage),
   },
   {
     field: "productDescription",
@@ -19,13 +20,13 @@ const columns = [
   {
     field: "condition",
     headerName: "Condition",
-    renderCell: ProductCondition,
+    renderCell: withRow(ProductCondition),
   },
   {
     field: "price",
     headerName: "Prix",
     type: "number",
-    renderCell: ProductPrice,
+    renderCell: withRow(ProductPrice),
   },
   {
     field: "stock",
