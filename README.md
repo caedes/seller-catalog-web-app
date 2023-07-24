@@ -29,3 +29,7 @@ yarn commit
 ```
 
 Push, deploy and enjoy! 🎉
+
+## API
+
+We tend to use the `/api` module to run all our HTTP requests. Made with [Ky](https://github.com/sindresorhus/ky#readme).
