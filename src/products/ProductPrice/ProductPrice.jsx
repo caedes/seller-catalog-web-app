@@ -1,10 +1,8 @@
 import { number } from "prop-types";
+import { Price } from "../../ds/atoms";
 
 export default function ProductPrice({ price }) {
-  return new Intl.NumberFormat(window.navigator.language, {
-    style: "currency",
-    currency: "EUR",
-  }).format(price);
+  return <Price value={price} />;
 }
 
 ProductPrice.propTypes = {
