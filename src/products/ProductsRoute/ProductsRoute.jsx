@@ -37,7 +37,7 @@ const columns = [
   },
 ];
 
-export default function ProductsPage() {
+export default function ProductsRoute() {
   const { isLoading, data: products } = useProducts();
 
   if (isLoading) return <LinearProgress />;

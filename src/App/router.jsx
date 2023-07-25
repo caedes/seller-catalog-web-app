@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainTemplate } from "../ds/templates";
-import ProductsPage from "../products/ProductsPage";
-import OrdersPage from "../orders/OrdersPage";
-import ProductPage from "../products/ProductPage";
+import ProductsRoute from "../products/ProductsRoute";
+import OrdersRoute from "../orders/OrdersRoute";
+import ProductRoute from "../products/ProductRoute";
 
 export const router = createBrowserRouter([
   {
@@ -11,19 +11,19 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <ProductsPage />,
+        element: <ProductsRoute />,
       },
       {
         path: "products",
-        element: <ProductsPage />,
+        element: <ProductsRoute />,
       },
       {
         path: "products/:id",
-        element: <ProductPage />,
+        element: <ProductRoute />,
       },
       {
         path: "orders",
-        element: <OrdersPage />,
+        element: <OrdersRoute />,
       },
       {
         path: "financial",
