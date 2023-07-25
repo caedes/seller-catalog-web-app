@@ -1,3 +1,5 @@
+import { Page } from "../../ds/pages";
+
 export default function OrdersRoute() {
-  return "Orders";
+  return <Page title="Orders" />;
 }

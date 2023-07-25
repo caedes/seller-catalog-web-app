@@ -1,5 +1,6 @@
 import { Box, LinearProgress } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import { Page } from "../../ds/pages";
 import { useProducts } from "../../hooks";
 import { withRow } from "../../hoc";
 import ProductCondition from "../ProductCondition";
@@ -43,20 +44,22 @@ export default function ProductsRoute() {
   if (isLoading) return <LinearProgress />;
 
   return (
-    <Box sx={{ height: "100%", width: "100%" }}>
-      <DataGrid
-        columns={columns}
-        rows={products}
-        initialState={{
-          pagination: {
-            paginationModel: {
-              pageSize: 15,
+    <Page title="Gestion du catalogue">
+      <Box sx={{ height: "100%", width: "100%" }}>
+        <DataGrid
+          columns={columns}
+          rows={products}
+          initialState={{
+            pagination: {
+              paginationModel: {
+                pageSize: 15,
+              },
             },
-          },
-        }}
-        pageSizeOptions={[15]}
-        disableRowSelectionOnClick
-      />
-    </Box>
+          }}
+          pageSizeOptions={[15]}
+          disableRowSelectionOnClick
+        />
+      </Box>
+    </Page>
   );
 }

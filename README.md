@@ -33,3 +33,9 @@ Push, deploy and enjoy! 🎉
 ## API
 
 We tend to use the `/api` module to run all our HTTP requests. Made with [Ky](https://github.com/sindresorhus/ky#readme).
+
+## Design System
+
+[Figma](https://www.figma.com)
+
+We want to use the [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/#the-atomic-design-methodology) approach. But as we just began this app, the [Page](./src/ds/pages/Page/Page.jsx) component won't follow this approach.
