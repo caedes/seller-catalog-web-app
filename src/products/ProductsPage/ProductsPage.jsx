@@ -1,10 +1,11 @@
 import { Box, LinearProgress } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import { useProducts } from "../../hooks";
+import { withRow } from "../../hoc";
+import ProductCondition from "../ProductCondition";
+import ProductDescription from "../ProductDescription";
 import ProductImage from "../ProductImage";
 import ProductPrice from "../ProductPrice";
-import ProductCondition from "../ProductCondition";
-import { withRow } from "../../hoc";
-import { useProducts } from "../../hooks";
 
 const columns = [
   {
@@ -15,7 +16,8 @@ const columns = [
   {
     field: "productDescription",
     headerName: "Produit",
-    valueGetter: ({ row }) => `${row.name} ${row.description}`,
+    flex: 1,
+    renderCell: withRow(ProductDescription),
   },
   {
     field: "condition",
