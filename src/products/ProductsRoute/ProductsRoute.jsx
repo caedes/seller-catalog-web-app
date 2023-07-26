@@ -7,13 +7,14 @@ import {
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { Page } from "../../ds/pages";
+import { Search } from "@mui/icons-material";
 import { useProducts, useSearch } from "../../hooks";
 import { withRow } from "../../hoc";
+import ProductActions from "../ProductActions";
 import ProductCondition from "../ProductCondition";
 import ProductDescription from "../ProductDescription";
 import ProductImage from "../ProductImage";
 import ProductPrice from "../ProductPrice";
-import { Search } from "@mui/icons-material";
 
 const columns = [
   {
@@ -42,6 +43,12 @@ const columns = [
     field: "stock",
     headerName: "Stock",
     type: "number",
+  },
+  {
+    field: "actions",
+    headerName: "Actions",
+    sortable: false,
+    renderCell: withRow(ProductActions),
   },
 ];
 
