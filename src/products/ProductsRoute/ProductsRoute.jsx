@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { Page } from "../../ds/pages";
-import { useProducts } from "../../hooks";
+import { useProducts, useSearch } from "../../hooks";
 import { withRow } from "../../hoc";
 import ProductCondition from "../ProductCondition";
 import ProductDescription from "../ProductDescription";
@@ -46,13 +46,18 @@ const columns = [
 ];
 
 export default function ProductsRoute() {
-  const { isLoading, data: products } = useProducts();
+  const [searchTerm, { onSearchChange, searchSubmit }] = useSearch();
+  const { isLoading, data: products, refetch } = useProducts({ searchTerm });
 
   if (isLoading) return <LinearProgress />;
 
   return (
     <Page title="Gestion du catalogue">
-      <Box sx={{ ml: 21, pb: 8 }}>
+      <Box
+        sx={{ ml: 21, pb: 8 }}
+        component="form"
+        onSubmit={searchSubmit(refetch)}
+      >
         <TextField
           placeholder="Recherche par GTIN ou SKU"
           id="input-with-icon-textfield"
@@ -64,8 +69,13 @@ export default function ProductsRoute() {
             ),
           }}
           sx={{ width: "630px" }}
+          value={searchTerm}
+          onChange={onSearchChange}
+          autoComplete="off"
         />
-        <Button sx={{ ml: 1 }}>Rechercher</Button>
+        <Button sx={{ ml: 1 }} onClick={searchSubmit(refetch)}>
+          Rechercher
+        </Button>
       </Box>
       <Box sx={{ height: "100%", width: "100%" }}>
         <DataGrid
