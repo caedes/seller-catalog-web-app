@@ -7,7 +7,7 @@
     "build": "vite build",
     "commit": "git-cz",
     "dev": "vite --port 3000",
-    "dev:api": "json-server --port 3001 --watch db.json --delay 1000",
+    "dev:api": "json-server --port 3001 --watch db.json",
     "format": "prettier --write .",
     "lint": "eslint --cache .",
     "prepare": "husky install",
