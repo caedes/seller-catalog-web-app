@@ -9,48 +9,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Page } from "../../ds/pages";
 import { Search } from "@mui/icons-material";
 import { useProducts, useSearch } from "../../hooks";
-import { withRow } from "../../hoc";
-import ProductActions from "../ProductActions";
-import ProductCondition from "../ProductCondition";
-import ProductDescription from "../ProductDescription";
-import ProductImage from "../ProductImage";
-import ProductPrice from "../ProductPrice";
-
-const columns = [
-  {
-    field: "image",
-    headerName: "Image",
-    renderCell: withRow(ProductImage),
-  },
-  {
-    field: "productDescription",
-    headerName: "Produit",
-    flex: 1,
-    renderCell: withRow(ProductDescription),
-  },
-  {
-    field: "condition",
-    headerName: "Condition",
-    renderCell: withRow(ProductCondition),
-  },
-  {
-    field: "price",
-    headerName: "Prix",
-    type: "number",
-    renderCell: withRow(ProductPrice),
-  },
-  {
-    field: "stock",
-    headerName: "Stock",
-    type: "number",
-  },
-  {
-    field: "actions",
-    headerName: "Actions",
-    sortable: false,
-    renderCell: withRow(ProductActions),
-  },
-];
+import { productColumns } from "../productColumns";
 
 export default function ProductsRoute() {
   const [searchTerm, { onSearchChange, searchSubmit }] = useSearch();
@@ -84,21 +43,20 @@ export default function ProductsRoute() {
           Rechercher
         </Button>
       </Box>
-      <Box sx={{ height: "100%", width: "100%" }}>
-        <DataGrid
-          columns={columns}
-          rows={products}
-          initialState={{
-            pagination: {
-              paginationModel: {
-                pageSize: 15,
-              },
+      <DataGrid
+        columns={productColumns}
+        rows={products}
+        initialState={{
+          pagination: {
+            paginationModel: {
+              pageSize: 15,
             },
-          }}
-          pageSizeOptions={[15]}
-          disableRowSelectionOnClick
-        />
-      </Box>
+          },
+        }}
+        pageSizeOptions={[15]}
+        disableRowSelectionOnClick
+        autoHeight
+      />
     </Page>
   );
 }
