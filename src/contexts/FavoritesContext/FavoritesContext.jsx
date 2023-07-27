@@ -15,6 +15,9 @@ const favoritesReducer = (state, action) => {
     case ADD_TO_FAVORITES:
       return [...state, action.id];
 
+    case REMOVE_FROM_FAVORITES:
+      return state.filter((id) => id !== action.id);
+
     default:
       return state;
   }
@@ -28,9 +31,23 @@ const Provider = ({ children }) => {
   const removeFromFavorites = ({ id }) =>
     dispatch({ type: REMOVE_FROM_FAVORITES, id });
 
+  const toggleFavorite = ({ id }) => {
+    const isFavorite = favoriteIds.includes(id);
+
+    dispatch({
+      type: isFavorite ? REMOVE_FROM_FAVORITES : ADD_TO_FAVORITES,
+      id,
+    });
+  };
+
   return (
     <FavoritesContext.Provider
-      value={{ favoriteIds, addToFavorites, removeFromFavorites }}
+      value={{
+        favoriteIds,
+        addToFavorites,
+        removeFromFavorites,
+        toggleFavorite,
+      }}
     >
       {children}
     </FavoritesContext.Provider>
