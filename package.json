@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "lint": "eslint --cache .",
     "prepare": "husky install",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest --coverage"
   },
   "commitlint": {
     "extends": [
@@ -41,9 +42,13 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^4.0.1",
+    "@vitest/coverage-v8": "^0.33.0",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -55,13 +60,16 @@
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-testing-library": "^5.11.0",
+    "eslint-plugin-vitest": "^0.2.8",
     "eslint-plugin-xss": "^0.1.12",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
+    "jsdom": "^22.1.0",
     "json-server": "^0.17.3",
     "lint-staged": "^13.2.3",
     "prettier": "^2.8.8",
     "prettier-plugin-packagejson": "^2.4.5",
-    "vite": "^4.4.0"
+    "vite": "^4.4.0",
+    "vitest": "^0.33.0"
   }
 }

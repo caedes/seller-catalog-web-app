@@ -20,7 +20,11 @@ Run the dev server:
 yarn dev
 ```
 
-Make your changes, test it.
+Make your changes, test it:
+
+```shell
+yarn test
+```
 
 Commit using:
 

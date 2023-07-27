@@ -1,7 +1,7 @@
 /* eslint-env node */
 
 module.exports = {
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, jest: true },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -12,6 +12,7 @@ module.exports = {
     "plugin:testing-library/react",
     "plugin:security/recommended",
     "plugin:xss/recommended",
+    "plugin:vitest/recommended",
     "prettier",
   ],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
