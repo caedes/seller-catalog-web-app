@@ -24,6 +24,9 @@ const isActiveTab = ({ pathname, url, domain }) => {
   return url === pathname || pathname.startsWith(`/${domain}`);
 };
 
+/**
+ * The main template of the Seller Catalog app. We have to use it with an [`<Outlet />` from ReactRouter](https://reactrouter.com/en/main/components/outlet).
+ */
 export default function MainTemplate() {
   const { pathname } = useLocation();
 
