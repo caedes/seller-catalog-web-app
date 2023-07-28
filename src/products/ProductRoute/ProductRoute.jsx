@@ -43,7 +43,7 @@ export default function ProductRoute() {
 
   return (
     <Page title={product.name}>
-      <Alert severity="success">
+      <Alert severity="success" aria-label="product-enrichment">
         <AlertTitle>Votre fiche produit a été enrichie avec succès</AlertTitle>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus
         temporibus deserunt adipisci nemo deleniti earum veritatis rem, dolores
