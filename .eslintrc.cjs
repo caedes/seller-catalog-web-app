@@ -14,6 +14,7 @@ module.exports = {
     "plugin:xss/recommended",
     "plugin:vitest/recommended",
     "prettier",
+    "plugin:storybook/recommended",
   ],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   overrides: [

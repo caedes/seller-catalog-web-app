@@ -14,13 +14,19 @@ Create an `.env` file:
 VITE_API_URL=http://localhost:3001
 ```
 
-Run the dev server:
+Develop your component in isolation through [Storybook stories](https://storybook.js.org/docs/react/get-started/whats-a-story). Run Storybook:
+
+```shell
+yarn storybook
+```
+
+Integrate your component in the app with the dev server:
 
 ```shell
 yarn dev
 ```
 
-Make your changes, test it:
+Don't forget to test it:
 
 ```shell
 yarn test

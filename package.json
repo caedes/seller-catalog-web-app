@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "build-storybook": "storybook build",
     "commit": "git-cz",
     "dev": "vite --port 3000",
     "dev:api": "json-server --port 3001 --watch db.json",
@@ -12,6 +13,7 @@
     "lint": "eslint --cache .",
     "prepare": "husky install",
     "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
     "test": "vitest --coverage"
   },
   "commitlint": {
@@ -42,6 +44,14 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@storybook/addon-essentials": "^7.1.1",
+    "@storybook/addon-interactions": "^7.1.1",
+    "@storybook/addon-links": "^7.1.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.1",
+    "@storybook/react": "^7.1.1",
+    "@storybook/react-vite": "^7.1.1",
+    "@storybook/testing-library": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -59,6 +69,7 @@
     "eslint-plugin-react-refresh": "^0.4.1",
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-testing-library": "^5.11.0",
     "eslint-plugin-vitest": "^0.2.8",
     "eslint-plugin-xss": "^0.1.12",
@@ -70,6 +81,7 @@
     "msw": "^1.2.3",
     "prettier": "^2.8.8",
     "prettier-plugin-packagejson": "^2.4.5",
+    "storybook": "^7.1.1",
     "vite": "^4.4.0",
     "vitest": "^0.33.0"
   }
