@@ -1,13 +1,23 @@
+import { Typography } from "@mui/material";
 import { number, oneOf } from "prop-types";
 
-export default function Price({ value, currency = "EUR" }) {
-  return new Intl.NumberFormat(window.navigator.language, {
+const defaultCurrency = "EUR";
+const supportedCurrencies = [defaultCurrency, "USD"];
+
+export default function Price({ value, currency = defaultCurrency }) {
+  const isoCurrency = supportedCurrencies.includes(currency)
+    ? currency
+    : defaultCurrency;
+
+  const priceWithCurrency = new Intl.NumberFormat(window.navigator.language, {
     style: "currency",
-    currency,
+    currency: isoCurrency,
   }).format(value);
+
+  return <Typography component="span">{priceWithCurrency}</Typography>;
 }
 
 Price.propTypes = {
   value: number,
-  currency: oneOf(["EUR", "USD"]),
+  currency: oneOf(supportedCurrencies),
 };

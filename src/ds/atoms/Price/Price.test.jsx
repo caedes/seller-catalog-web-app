@@ -14,9 +14,15 @@ describe("Price", () => {
     expect(screen.getByText("100,00 €")).toBeInTheDocument();
   });
 
-  test("in US and Dollar displays the price and the currency", () => {
+  test("in EN and Dollar displays the price and the currency", () => {
     render(<Price value={100} currency="USD" />);
 
     expect(screen.getByText("$100.00")).toBeInTheDocument();
+  });
+
+  test("with a non supported currency", () => {
+    render(<Price value={100} currency="UNSUPPORTED" />);
+
+    expect(screen.getByText("€100.00")).toBeInTheDocument();
   });
 });
